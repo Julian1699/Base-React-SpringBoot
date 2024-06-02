@@ -1,0 +1,48 @@
+.app-container {
+    background-color: #e6f7ff; /* Azul suave */
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .table-container {
+    background-color: #ffffff; /* Blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    background-color: #e6f2ff; /* Color de fondo azul claro */
+  }
+  
+  .container {
+    margin-top: 30px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+
+  
+  
