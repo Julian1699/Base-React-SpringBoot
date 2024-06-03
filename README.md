@@ -68,11 +68,18 @@ La capa de persistencia y gestión de datos se realiza a través de JPA y Hibern
     ```
 
 3. Ejecutar el frontend:
+
     ```bash
     npm start
     ```
 
-4. Instalar dependencias del backend y ejecutarlo:
+4. Configurar Conexión a tu Base de Datos
+
+Es importante configurar el archivo `application.properties` con las credenciales de conexión a tu base de datos local. Este proyecto está diseñado para aceptar conexiones a bases de datos MySQL, PostgreSQL y OracleSQL. En este caso, se proporcionan las credenciales de conexión para MySQL.
+
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/7eb29dfa-653c-4f3f-9246-fe1afa1abe26)
+
+5. Instalar dependencias del backend y ejecutarlo:
     ```bash
     cd ../backend-springboot
     ```
@@ -84,6 +91,6 @@ La capa de persistencia y gestión de datos se realiza a través de JPA y Hibern
     ```bash
     ./mvnw spring-boot:run
     ```
-5. Acceder a la aplicación:
+6. Acceder a la aplicación:
    - Frontend: `http://localhost:3000`
    - Backend: `http://localhost:8080`
