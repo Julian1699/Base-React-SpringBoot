@@ -3,6 +3,8 @@
 
 ## Aplicación de Gestión de Objetos con React JS, Spring Boot y MySQL
 
+![Final App FullStack](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/13991635-d262-4461-b7cc-36ddab60bcc0)
+
 ¡Bienvenido al repositorio del proyecto de la Aplicación de Gestión de Objetos! En esta versión, hemos empleado MySQL para una mayor escalabilidad y rendimiento. La aplicación utiliza tecnologías modernas como React y Spring Boot.
 
 ## Descripción
@@ -53,13 +55,15 @@ La capa de persistencia y gestión de datos se realiza a través de JPA y Hibern
 ### Pasos
 1. Clonar el repositorio:
     ```bash
-    git clone https://github.com/tuusuario/Sistema-de-Gestion-de-Objetos.git
+    git clone https://github.com/Julian1699/Base-React-SpringBoot.git
     ```
 
 2. Instalar dependencias del frontend:
     ```bash
     cd frontend-react
+    ```
 
+    ```bash
     npm install
     ```
 
@@ -71,12 +75,15 @@ La capa de persistencia y gestión de datos se realiza a través de JPA y Hibern
 4. Instalar dependencias del backend y ejecutarlo:
     ```bash
     cd ../backend-springboot
-
+    ```
+    
+    ```bash
     ./mvnw install
-
+    ```
+    
+    ```bash
     ./mvnw spring-boot:run
     ```
-
 5. Acceder a la aplicación:
    - Frontend: `http://localhost:3000`
    - Backend: `http://localhost:8080`
