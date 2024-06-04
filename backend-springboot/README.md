@@ -29,9 +29,11 @@ Es importante configurar el archivo `application.properties` con las credenciale
 
 Dirigirse a la ruta especifica del backend y ejecutarlo:
 
-    ```bash
+```bash
+    
     cd ../backend-springboot
-    ```
+    
+```
 
 Accer a la siguiente ruta una vez se haya puesto a correr la aplicación: 
 
