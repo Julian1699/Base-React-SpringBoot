@@ -27,6 +27,20 @@ Es importante configurar el archivo `application.properties` con las credenciale
 
 ## Funcionalidades CRUD
 
+Instalar dependencias del backend y ejecutarlo:
+
+    ```bash
+    cd ../backend-springboot
+    ```
+    
+    ```bash
+    ./mvnw install
+    ```
+    
+    ```bash
+    ./mvnw spring-boot:run
+    ```
+
 Accer a la siguiente ruta una vez se haya puesto a correr la aplicación: 
 
 - http://localhost:8080/swagger-ui/index.html
