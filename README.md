@@ -56,43 +56,20 @@ La capa de persistencia y gestión de datos se realiza a través de JPA y Hibern
 1. Clonar el repositorio:
    
 ```bash
-git clone --branch main-db-docker --single-branch https://github.com/Julian1699/Base-React-SpringBoot.git
+git clone --branch dockerized-app --single-branch https://github.com/Julian1699/Base-React-SpringBoot.git
 ```
 
-2. Instalar dependencias del frontend:
-    ```bash
-    cd frontend-react
-    ```
-
-    ```bash
-    npm install
-    ```
-
-3. Ejecutar el frontend:
-
-    ```bash
-    npm start
-    ```
-
-4. Poner a correr Docker Compose del Backend en Spring Boot
-Para instanciar el contenedor con la imagen de la base de datos PostgreSQL y permitir que el API se conecte a ella y el ORM cree las tablas necesarias, sigue estos pasos:
-
-- Navega al directorio del backend de Spring Boot:
+2. Ejecutar Docker Compose
+Ejecuta el siguiente comando en el directorio donde se encuentre el archivo docker-compose.yml:
 
 ```bash
-cd backend-springboot/
+docker compose up
 ```
-Ejecuta Docker Compose:
+Después de un tiempo, se crearán tres contenedores: uno con la aplicación en React, otro con el API en Spring Boot y otro con la imagen de la base de datos en PostgreSQL, de la siguiente manera:
 
-```bash
-docker-compose up
-```
-5. Ejecutar el Método main del API
-Corre el método main del API para que se creen las tablas necesarias en la base de datos.a).
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/dc5b2e3c-664a-4aa2-8ecd-d6f723aaeb18)
 
-![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/20b0b2db-471a-4dd9-87b2-de7db95e4a22)
-   
-6. Acceso a la Base de Datos en Contenedor de Docker
+3. Acceso a la Base de Datos en Contenedor de Docker
    
 Para acceder a la base de datos PostgreSQL en el contenedor Docker, sigue estos pasos:
 
