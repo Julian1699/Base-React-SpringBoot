@@ -69,6 +69,13 @@
 			<version>2.2.0</version>
 		</dependency>
 		<!-- } Dependecies for use Swagger-->
+		<!--Dependecies for use H2 Database { -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- } Dependecies for use H2 Database -->
 		
 	</dependencies>
 
