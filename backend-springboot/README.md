@@ -23,7 +23,7 @@ El objetivo central de este backend es proporcionar una API eficiente y centrali
 
 Es importante configurar el archivo `application.properties` con las credenciales de conexión a tu base de datos local. Este proyecto está diseñado para aceptar conexiones a bases de datos MySQL, PostgreSQL y OracleSQL. En este caso, se proporcionan las credenciales de conexión para MySQL.
 
-![alt text](image.png)
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/05992cd1-1c4d-4bf9-a2de-69790ce52023)
 
 ## Funcionalidades CRUD
 
