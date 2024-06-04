@@ -101,24 +101,20 @@ const buscarObjetos = async (e) => {
 - Node.js y npm instalados en su máquina.
 
 ### Pasos
-1. Clonar el repositorio:
-    ```bash
-    git clone https://github.com/tuusuario/frontend-react.git
-    ```
 
-2. Instalar las dependencias:
+1. Instalar las dependencias:
     ```bash
     cd frontend-react
     
     npm install
     ```
 
-3. Ejecutar la aplicación:
+2. Ejecutar la aplicación:
     ```bash
     npm start
     ```
 
-4. Acceder a la aplicación en [http://localhost:3000](http://localhost:3000).
+3. Acceder a la aplicación en [http://localhost:3000](http://localhost:3000).
 
 
 ## Componentes Principales
