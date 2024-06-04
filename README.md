@@ -3,7 +3,7 @@
 
 ## Aplicación de Gestión de Objetos con React JS, Spring Boot y H2
 
-![Base FullStack - H2](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/46ee9b34-b00a-4215-85b6-82c9131de5ca)
+![Base FullStack - db-docker](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/86f9361b-84a8-4b19-a0a6-70d41884b8d7)
 
 ¡Bienvenido al repositorio del proyecto de la Aplicación de Gestión de Objetos! En esta versión, hemos empleado H2 para una mayor escalabilidad y rendimiento. La aplicación utiliza tecnologías modernas como React y Spring Boot.
 
@@ -50,7 +50,7 @@ La capa de persistencia y gestión de datos se realiza a través de JPA y Hibern
 ### Prerrequisitos
 - Node.js y npm instalados en su máquina.
 - Java JDK 17 instalado en su máquina.
-- H2 instalado y configurado.
+- Docker instalado y configurado.
 
 ### Pasos
 1. Clonar el repositorio:
@@ -74,42 +74,49 @@ git clone --branch main-H2 --single-branch https://github.com/Julian1699/Base-Re
     npm start
     ```
 
-4. Acceso a la Base de Datos H2
+4. Poner a correr Docker Compose del Backend en Spring Boot
+Para instanciar el contenedor con la imagen de la base de datos PostgreSQL y permitir que el API se conecte a ella y el ORM cree las tablas necesarias, sigue estos pasos:
 
-Para acceder a la base de datos H2, sigue estos pasos:
-
-1. Inicia la aplicación Spring Boot.
-   
-2. Abre tu navegador web y dirígete a la siguiente URL:
-
-- http://localhost:8080/h2-console
-  
-3. De no encontrarse configurados, reescribe los campos en la pantalla de inicio de sesión de la consola H2 de la siguiente manera:
+- Navega al directorio del backend de Spring Boot:
 
 ```bash
-Driver Class: org.h2.Driver
-JDBC URL: jdbc:h2:mem:testdb
-User Name: root
-Password: (deja este campo vacío)
+cd backend-springboot/
 ```
+Ejecuta Docker Compose:
 
-- Haz clic en "Connect".
+```bash
+docker-compose up
+```
+5. Ejecutar el Método main del API
+Corre el método main del API para que se creen las tablas necesarias en la base de datos.a).
 
-![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/ea382d8f-2093-4497-bb90-be47b0f81b09)
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/20b0b2db-471a-4dd9-87b2-de7db95e4a22)
+   
+6. Acceso a la Base de Datos en Contenedor de Docker
+   
+Para acceder a la base de datos PostgreSQL en el contenedor Docker, sigue estos pasos:
 
-5. Instalar dependencias del backend y ejecutarlo:
-    ```bash
-    cd ../backend-springboot
-    ```
-    
-    ```bash
-    ./mvnw install
-    ```
-    
-    ```bash
-    ./mvnw spring-boot:run
-    ```
-6. Acceder a la aplicación:
+Abre una terminal que tenga acceso a Docker.
+
+Ejecuta el siguiente comando para acceder al contenedor:
+   
+```bash
+winpty docker exec -it db-postgres bash
+```
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/333c1e49-58a8-4348-8709-7d0bf8901edb)
+
+Una vez dentro del contenedor, conéctate a PostgreSQL:
+
+```bash
+psql -U root -d tryapi
+```
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/8a1b3997-30eb-4ebc-a248-84c83c762062)
+   
+Ahora puedes realizar consultas a las entidades de la base de datos en la terminal:
+
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/17eee8fe-7b45-4f22-9c5d-5a22f2ce295f)
+ 
+7. Acceder a la aplicación:
    - Frontend: `http://localhost:3000`
    - Backend: `http://localhost:8080`
-   - Base de Datos: `http://localhost:8080/h2-console`
+   - Swagger: `http://localhost:8080/swagger-ui/index.html#/`
