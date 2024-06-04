@@ -1,8 +1,8 @@
 # Backend del Sistema de Gestión de Objetos 
 
-| Spring Boot | MySQL |
+| Spring Boot | H2 |
 
-## Aplicación de Gestión de Objetos con Spring Boot y MySQL
+## Aplicación de Gestión de Objetos con Spring Boot y H2
 
 ¡Bienvenido al repositorio del backend de la Aplicación de Gestión de Objetos! En esta aplicación, utilizamos Spring Boot para el desarrollo del backend, proporcionando una API robusta y segura.
 
@@ -17,7 +17,7 @@ El objetivo central de este backend es proporcionar una API eficiente y centrali
 - **Controladores REST**: Utilizamos controladores REST para definir y gestionar las rutas y acciones de la API.
 - **Persistencia con JPA y Hibernate**: La gestión de datos se realiza a través de JPA y Hibernate, asegurando una interacción eficiente con la base de datos.
 - **Documentación con Swagger**: La API está documentada con Swagger, proporcionando una interfaz interactiva para probar los endpoints.
-- **Base de Datos MySQL**: Utilizamos MySQL para la gestión de bases de datos relacional.
+- **Base de Datos H2**: Utilizamos H2 para la gestión de bases de datos relacional.
 
 
 ## Acceso a la Base de Datos H2
@@ -92,4 +92,4 @@ Permite a los usuarios buscar objetos en la base de datos utilizando varios filt
 
 - Swagger: Documentación interactiva de la API.
 
-- MySQL: Sistema de gestión de bases de datos relacional.
+- H2: Sistema de gestión de bases de datos relacional.
