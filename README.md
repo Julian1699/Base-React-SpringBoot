@@ -1,11 +1,11 @@
 # Sistema de Gestión de Objetos 
-| React | SpringBoot | H2 |
+| React | SpringBoot | Postgres-Docker |
 
-## Aplicación de Gestión de Objetos con React JS, Spring Boot y H2
+## Aplicación de Gestión de Objetos con React JS, Spring Boot y Postgres-Docker
 
 ![Base FullStack - db-docker](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/86f9361b-84a8-4b19-a0a6-70d41884b8d7)
 
-¡Bienvenido al repositorio del proyecto de la Aplicación de Gestión de Objetos! En esta versión, hemos empleado H2 para una mayor escalabilidad y rendimiento. La aplicación utiliza tecnologías modernas como React y Spring Boot.
+¡Bienvenido al repositorio del proyecto de la Aplicación de Gestión de Objetos! En esta versión, hemos empleado Postgres-Docker para una mayor escalabilidad y rendimiento. La aplicación utiliza tecnologías modernas como React y Spring Boot.
 
 ## Descripción
 
@@ -29,7 +29,7 @@ Hemos implementado Spring Boot en el backend para crear un sistema robusto y seg
 Hemos utilizado controladores REST de Spring para definir y gestionar las diversas rutas y acciones disponibles en la aplicación.
 
 ### Persistencia con JPA y Hibernate
-La capa de persistencia y gestión de datos se realiza a través de JPA y Hibernate. En esta versión hemos utilizado H2, lo que mejora la escalabilidad y el rendimiento.
+La capa de persistencia y gestión de datos se realiza a través de JPA y Hibernate. En esta versión hemos utilizado Postgres-Docker, lo que mejora la escalabilidad y el rendimiento.
 
 ## Tecnologías Empleadas
 
@@ -43,7 +43,7 @@ La capa de persistencia y gestión de datos se realiza a través de JPA y Hibern
 - **Spring Boot**: Framework para construir aplicaciones Java.
 - **Spring Data JPA**: Para interactuar con la base de datos.
 - **Swagger**: Documentación interactiva de la API.
-- **H2**: Sistema de gestión de bases de datos relacional.
+- **Postgres-Docker**: Sistema de gestión de bases de datos relacional.
 
 ## Instalación y Ejecución
 
