@@ -3,7 +3,7 @@
 
 ## Aplicación de Gestión de Objetos con React, Spring Boot y PostgreSQL (Dockerizado)
 
-![Final APP Dockerized](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/ba48866c-c6c7-4728-8820-1496e7917693)
+         ![Final APP Dockerized](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/ba48866c-c6c7-4728-8820-1496e7917693)
 
 ¡Bienvenido al repositorio del proyecto de la Aplicación de Gestión de Objetos! En esta versión, hemos empleado PostgreSQL Dockerizado para una mayor escalabilidad y rendimiento. La aplicación utiliza tecnologías modernas como React y Spring Boot.
 
