@@ -32,10 +32,12 @@ Instalar dependencias del backend y ejecutarlo:
     ```bash
     cd ../backend-springboot
     ```
+
     
     ```bash
     ./mvnw install
     ```
+    
     
     ```bash
     ./mvnw spring-boot:run
