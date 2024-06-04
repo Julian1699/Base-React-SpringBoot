@@ -29,12 +29,13 @@ Para instanciar el contenedor con la imagen de la base de datos PostgreSQL y per
 ```bash
 cd backend-springboot/
 ```
-Ejecuta Docker Compose:
+- Ejecuta Docker Compose:
 
 ```bash
 docker-compose up
 ```
 ### Ejecutar el Método main del API
+
 Corre el método main del API para que se creen las tablas necesarias en la base de datos.a).
 
 ![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/20b0b2db-471a-4dd9-87b2-de7db95e4a22)
@@ -43,7 +44,7 @@ Corre el método main del API para que se creen las tablas necesarias en la base
    
 Para acceder a la base de datos PostgreSQL en el contenedor Docker, sigue estos pasos:
 
-Abre una terminal que tenga acceso a Docker.
+- Abre una terminal que tenga acceso a Docker.
 
 Ejecuta el siguiente comando para acceder al contenedor:
    
@@ -52,14 +53,16 @@ winpty docker exec -it db-postgres bash
 ```
 ![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/333c1e49-58a8-4348-8709-7d0bf8901edb)
 
-Una vez dentro del contenedor, conéctate a PostgreSQL:
+- Una vez dentro del contenedor, conéctate a PostgreSQL:
 
 ```bash
 psql -U root -d tryapi
 ```
 ![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/8a1b3997-30eb-4ebc-a248-84c83c762062)
    
-Ahora puedes realizar consultas a las entidades de la base de datos en la terminal:
+- Ahora puedes realizar consultas a las entidades de la base de datos en la terminal:
+
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/17eee8fe-7b45-4f22-9c5d-5a22f2ce295f)
 
 ## Funcionalidades CRUD
 
