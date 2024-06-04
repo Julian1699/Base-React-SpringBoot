@@ -1,9 +1,9 @@
 # Sistema de Gestión de Objetos 
 | React | SpringBoot | MySQL |
 
-## Aplicación de Gestión de Objetos con React JS, Spring Boot y MySQL
+## Aplicación de Gestión de Objetos con React JS, Spring Boot y H2
 
-![Final App FullStack](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/13991635-d262-4461-b7cc-36ddab60bcc0)
+![Base FullStack - H2](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/46ee9b34-b00a-4215-85b6-82c9131de5ca)
 
 ¡Bienvenido al repositorio del proyecto de la Aplicación de Gestión de Objetos! En esta versión, hemos empleado MySQL para una mayor escalabilidad y rendimiento. La aplicación utiliza tecnologías modernas como React y Spring Boot.
 
@@ -73,11 +73,28 @@ La capa de persistencia y gestión de datos se realiza a través de JPA y Hibern
     npm start
     ```
 
-4. Configurar Conexión a tu Base de Datos
+4. Acceso a la Base de Datos H2
 
-Es importante configurar el archivo `application.properties` con las credenciales de conexión a tu base de datos local. Este proyecto está diseñado para aceptar conexiones a bases de datos MySQL, PostgreSQL y OracleSQL. En este caso, se proporcionan las credenciales de conexión para MySQL.
+Para acceder a la base de datos H2, sigue estos pasos:
 
-![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/7eb29dfa-653c-4f3f-9246-fe1afa1abe26)
+1. Inicia la aplicación Spring Boot.
+   
+2. Abre tu navegador web y dirígete a la siguiente URL:
+
+- http://localhost:8080/h2-console
+  
+3. De no encontrarse configurados, reescribe los campos en la pantalla de inicio de sesión de la consola H2 de la siguiente manera:
+
+```bash
+Driver Class: org.h2.Driver
+JDBC URL: jdbc:h2:mem:testdb
+User Name: root
+Password: (deja este campo vacío)
+```
+
+- Haz clic en "Connect".
+
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/ea382d8f-2093-4497-bb90-be47b0f81b09)
 
 5. Instalar dependencias del backend y ejecutarlo:
     ```bash
@@ -94,3 +111,4 @@ Es importante configurar el archivo `application.properties` con las credenciale
 6. Acceder a la aplicación:
    - Frontend: `http://localhost:3000`
    - Backend: `http://localhost:8080`
+   - Base de Datos: `http://localhost:8080/h2-console`
