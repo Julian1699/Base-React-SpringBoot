@@ -20,33 +20,36 @@ El objetivo central de este backend es proporcionar una API eficiente y centrali
 - **Base de Datos Postgres-Docker**: Utilizamos Postgres-Docker para la gestión de bases de datos relacional.
 
 
-## Poner a correr Docker Compose del Backend en Spring Boot
+## Instalación y Ejecución
 
-Para instanciar el contenedor con la imagen de la base de datos PostgreSQL y permitir que el API se conecte a ella y el ORM cree las tablas necesarias, sigue estos pasos:
+### Prerrequisitos
 
-- Navega al directorio del backend de Spring Boot:
+- Docker instalado y configurado.
 
-```bash
-cd backend-springboot/
-```
-- Ejecuta Docker Compose:
-
-```bash
-docker-compose up
-```
-### Ejecutar el Método main del API
-
-Corre el método main del API para que se creen las tablas necesarias en la base de datos.a).
-
-![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/20b0b2db-471a-4dd9-87b2-de7db95e4a22)
+### Pasos
+1. Clonar el repositorio:
    
-### Acceso a la Base de Datos en Contenedor de Docker
+```bash
+git clone --branch dockerized-app --single-branch https://github.com/Julian1699/Base-React-SpringBoot.git
+```
+
+2. Ejecutar Docker Compose
+Ejecuta el siguiente comando en el directorio donde se encuentre el archivo docker-compose.yml:
+
+```bash
+docker compose up
+```
+Después de un tiempo, se crearán tres contenedores: uno con la aplicación en React, otro con el API en Spring Boot y otro con la imagen de la base de datos en PostgreSQL, de la siguiente manera:
+
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/dc5b2e3c-664a-4aa2-8ecd-d6f723aaeb18)
+
+3. Acceso a la Base de Datos en Contenedor de Docker
    
 Para acceder a la base de datos PostgreSQL en el contenedor Docker, sigue estos pasos:
 
 - Abre una terminal que tenga acceso a Docker.
 
-Ejecuta el siguiente comando para acceder al contenedor:
+- Ejecuta el siguiente comando para acceder al contenedor:
    
 ```bash
 winpty docker exec -it db-postgres bash
@@ -63,7 +66,6 @@ psql -U root -d tryapi
 - Ahora puedes realizar consultas a las entidades de la base de datos en la terminal:
 
 ![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/17eee8fe-7b45-4f22-9c5d-5a22f2ce295f)
-
 ## Funcionalidades CRUD
 
 Dirigirse a la ruta especifica del backend y ejecutarlo:
