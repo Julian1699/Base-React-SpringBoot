@@ -20,7 +20,8 @@ El objetivo central de este backend es proporcionar una API eficiente y centrali
 - **Base de Datos H2**: Utilizamos H2 para la gestión de bases de datos relacional.
 
 
-4. Poner a correr Docker Compose del Backend en Spring Boot
+## Poner a correr Docker Compose del Backend en Spring Boot
+
 Para instanciar el contenedor con la imagen de la base de datos PostgreSQL y permitir que el API se conecte a ella y el ORM cree las tablas necesarias, sigue estos pasos:
 
 - Navega al directorio del backend de Spring Boot:
@@ -33,12 +34,12 @@ Ejecuta Docker Compose:
 ```bash
 docker-compose up
 ```
-5. Ejecutar el Método main del API
+### Ejecutar el Método main del API
 Corre el método main del API para que se creen las tablas necesarias en la base de datos.a).
 
 ![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/20b0b2db-471a-4dd9-87b2-de7db95e4a22)
    
-6. Acceso a la Base de Datos en Contenedor de Docker
+### Acceso a la Base de Datos en Contenedor de Docker
    
 Para acceder a la base de datos PostgreSQL en el contenedor Docker, sigue estos pasos:
 
