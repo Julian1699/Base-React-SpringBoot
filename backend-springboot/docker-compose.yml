@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  postgres:
+    container_name: db-postgres
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: tryapi
+    ports:
+      - "5000:5432"
