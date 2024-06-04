@@ -19,11 +19,29 @@ El objetivo central de este backend es proporcionar una API eficiente y centrali
 - **Documentación con Swagger**: La API está documentada con Swagger, proporcionando una interfaz interactiva para probar los endpoints.
 - **Base de Datos MySQL**: Utilizamos MySQL para la gestión de bases de datos relacional.
 
-## Configurar Conexión a tu Base de Datos
 
-Es importante configurar el archivo `application.properties` con las credenciales de conexión a tu base de datos local. Este proyecto está diseñado para aceptar conexiones a bases de datos MySQL, PostgreSQL y OracleSQL. En este caso, se proporcionan las credenciales de conexión para MySQL.
+## Acceso a la Base de Datos H2
 
-![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/05992cd1-1c4d-4bf9-a2de-69790ce52023)
+Para acceder a la base de datos H2, sigue estos pasos:
+
+1. Inicia la aplicación Spring Boot.
+   
+2. Abre tu navegador web y dirígete a la siguiente URL:
+
+- http://localhost:8080/h2-console
+  
+3. De no encontrarse configurados, reescribe los campos en la pantalla de inicio de sesión de la consola H2 de la siguiente manera:
+
+```bash
+Driver Class: org.h2.Driver
+JDBC URL: jdbc:h2:mem:testdb
+User Name: root
+Password: (deja este campo vacío)
+```
+
+- Haz clic en "Connect".
+
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/ea382d8f-2093-4497-bb90-be47b0f81b09)
 
 ## Funcionalidades CRUD
 
