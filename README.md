@@ -54,9 +54,10 @@ La capa de persistencia y gestión de datos se realiza a través de JPA y Hibern
 
 ### Pasos
 1. Clonar el repositorio:
-    ```bash
-    git clone https://github.com/Julian1699/Base-React-SpringBoot.git
-    ```
+   
+```bash
+git clone --branch main-H2 --single-branch https://github.com/Julian1699/Base-React-SpringBoot.git
+```
 
 2. Instalar dependencias del frontend:
     ```bash
