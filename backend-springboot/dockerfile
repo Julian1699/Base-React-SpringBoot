@@ -1,0 +1,10 @@
+# Usa una imagen base de OpenJDK
+FROM openjdk:17-jdk-alpine
+# Establece el directorio de trabajo en el contenedor
+WORKDIR /app
+# Copia el archivo JAR generado en el directorio target al contenedor
+COPY target/backend-springboot-0.0.1-SNAPSHOT.jar springboot.jar
+# Expone el puerto 8080 para la aplicación
+EXPOSE 8080
+# Comando por defecto para ejecutar la aplicación
+ENTRYPOINT ["java", "-jar", "springboot.jar"]

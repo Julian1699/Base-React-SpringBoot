@@ -1,0 +1,6 @@
+com\back\backend_springboot\model\Objeto.class
+com\back\backend_springboot\service\ObjetoService.class
+com\back\backend_springboot\SpringbootApplication.class
+com\back\backend_springboot\utils\ResourceNotFoundException.class
+com\back\backend_springboot\controller\ObjetoController.class
+com\back\backend_springboot\repository\ObjetoRepository.class

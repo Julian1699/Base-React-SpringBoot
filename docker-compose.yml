@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  # App (React - Frontend)
+  react:
+    container_name: react
+    image: react:1.0.0
+    build: "./frontend-react"
+    ports:
+      - 3000:3000
+    depends_on:
+      - springboot
+
+  # App (Springboot - Backend)
+  springboot:
+    container_name: springboot
+    image: springboot:1.0.0
+    build: "./backend-springboot"
+    ports:
+      - 8080:8080
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres_db:5432/tryapi
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+    depends_on:
+      - postgres_db
+
+  # App (Postgres - Data Base)
+  postgres_db:
+    container_name: db-postgres
+    image: postgres:12
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: tryapi
