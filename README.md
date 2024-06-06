@@ -7,6 +7,8 @@
 
 ¡Bienvenido al repositorio del proyecto de la Aplicación de Gestión de Objetos! En esta versión, hemos empleado MySQL para una mayor escalabilidad y rendimiento. La aplicación utiliza tecnologías modernas como React y Spring Boot.
 
+![image](https://github.com/Julian1699/Base-React-SpringBoot/assets/114323630/f8b7736a-bcba-44a1-bc55-8072960dfe6b)
+
 ## Descripción
 
 El objetivo central de esta aplicación es proporcionar una plataforma eficiente y centralizada para la gestión de objetos abstractos. Hemos combinado React JS en el frontend y Spring Boot en el backend para ofrecer una experiencia de usuario dinámica y una base sólida.
